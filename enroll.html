@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Participants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="participants.html">Back to Participants</a>
+    </div>
+
+    <div class="form-container">
+        <h2>Enroll a New Participant</h2>
+        <form action="participants.html" method="POST">
+            
+            <label for="participant-id">Participant ID:</label>
+            <input type="text" id="participant-id" name="participant-id" required>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select...</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="enrollment-date">Enrollment Date:</label>
+            <input type="date" id="enrollment-date" name="enrollment-date" required>
+
+            <label for="trial-phase">Trial Phase:</label>
+            <select id="trial-phase" name="trial-phase">
+                <option value="">Select Phase...</option>
+                <option value="Phase 1">Phase 1</option>
+                <option value="Phase 2">Phase 2</option>
+                <option value="Phase 3">Phase 3</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <label for="study">Study:</label>
+            <select id="study" name="study">
+                <option value="">Select Study...</option>
+                <option value="Study A">Study A</option>
+                <option value="Study B">Study B</option>
+                <option value="Study C">Study C</option>
+            </select>
+
+            <label for="site-location">Site Location:</label>
+            <input type="text" id="site-location" name="site-location" required>
+
+            <label for="contact-info">Contact Info:</label>
+            <input type="tel" id="contact-info" name="contact-info" required>
+
+            <button type="submit" class="enroll-btn">Enroll Now</button>
+        </form>
+    </div>
+
+</body>
+</html>

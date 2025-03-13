@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants - Clinical Trials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="nav-title">Clinical Trials App</h1>
+    </nav>
+
+    <div class="participants-container">
+        <h2>Participants List</h2>
+        
+        <!-- Buttons Section -->
+        <div class="top-buttons">
+            <button class="top-button" onclick="location.href='index.html'">Home</button>
+            <button class="top-button" onclick="location.href='enroll.html'">Enroll Participants</button>
+            <button class="top-button">Sites</button>
+            <button class="top-button">Studies</button>            
+            <button class="top-button">Schedules</button>
+            <button class="top-button">Site Budgets</button>
+            <button class="top-button">Users</button>
+        </div>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search participants..." onkeyup="searchTable()">
+
+        <table id="participantsTable">
+            <thead>
+                <tr>
+                    <th>Participant ID</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Enrollment Date</th>
+                    <th>Trial Phase</th>
+                    <th>Status</th>
+                    <th>Study</th>
+                    <th>Site Location</th>
+                    <th>Contact Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P-001</td><td>John Doe</td><td>45</td><td>Male</td><td>2024-02-15</td><td>Phase 2</td><td>Active</td><td>Diabetes Type 2</td><td>Nairobi Hospital</td><td>0710111213</td>
+                </tr>
+                <tr>
+                    <td>P-002</td><td>Jane Smith</td><td>32</td><td>Female</td><td>2024-03-10</td><td>Phase 3</td><td>Completed</td><td>Hypertension</td><td>Aga Khan Hospital</td><td>0700123456</td>
+                </tr>
+                <tr>
+                    <td>P-003</td><td>James Brown</td><td>50</td><td>Male</td><td>2024-01-20</td><td>Phase 1</td><td>Withdrawn</td><td>Cardiac Issues</td><td>KNH</td><td>0722121232</td>
+                </tr>
+                <tr>
+                    <td>P-004</td><td>Mary Johnson</td><td>40</td><td>Female</td><td>2024-04-05</td><td>Phase 2</td><td>Active</td><td>Asthma</td><td>MediCare Hospital</td><td>0733559988</td>
+                </tr>
+                <tr>
+                    <td>P-005</td><td>David Wilson</td><td>29</td><td>Male</td><td>2024-05-12</td><td>Phase 3</td><td>Completed</td><td>Diabetes Type 1</td><td>ABC Medical</td><td>0710789654</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
